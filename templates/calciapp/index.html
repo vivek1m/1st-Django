@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <style>
       body {
-        background: #e8f0fe; /* Pleasant soft blue-gray */
+        background: #e8f0fe;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
 
@@ -29,7 +29,7 @@
         font-weight: 500;
       }
 
-      #about p {
+      #about p, #instructions p, #instructions ul {
         font-size: 1rem;
         color: #444;
       }
@@ -60,6 +60,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#instructions">Instructions</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -76,7 +79,7 @@
           <!-- Form Card -->
           <div class="card mb-4 bg-white">
             <div class="card-body">
-              <form method="GET" action="#">
+              <form method="GET" action="{% url 'submit_query' %}">
                 <div class="form-group mb-3">
                   <input type="search" class="form-control" name="query" id="query" placeholder="Enter your calculation">
                 </div>
@@ -89,12 +92,28 @@
           </div>
 
           <!-- About Section -->
-          <div id="about" class="card bg-light">
+          <div id="about" class="card bg-light mb-3">
             <div class="card-body">
               <h5 class="text-center mb-3"><strong>About This App</strong></h5>
               <p class="text-center">
                 <strong>Django Calci App is a simple and user-friendly calculator built using Django and Bootstrap 5.</strong>
               </p>
+            </div>
+          </div>
+
+          <!-- Instructions Section -->
+          <div id="instructions" class="card bg-light">
+            <div class="card-body">
+              <h5 class="text-center mb-3"><strong>Instructions to Use Our App</strong></h5>
+              <ul class="list-unstyled text-center">
+                <li><strong>+</strong> → Addition (e.g., <code>5 + 3</code>)</li>
+                <li><strong>-</strong> → Subtraction (e.g., <code>9 - 2</code>)</li>
+                <li><strong>*</strong> → Multiplication (e.g., <code>4 * 6</code>)</li>
+                <li><strong>/</strong> → Division (e.g., <code>8 / 2</code>)</li>
+                <li><strong>%</strong> → Modulus (e.g., <code>10 % 3</code>)</li>
+              </ul>
+              <p class="text-center mt-3">✔️ Enter your expression in the input field and click <strong>Submit</strong>.</p>
+              <p class="text-center">❌ Avoid using alphabets or unsupported symbols.</p>
             </div>
           </div>
 
