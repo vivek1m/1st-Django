@@ -61,30 +61,17 @@ django-calculator/
 git clone https://github.com/your-username/django-calculator.git
 cd django-calculator
 2. Create and Activate a Virtual Environment
-bash
-Copy
-Edit
 python -m venv venv
 source venv/bin/activate     # On Windows: venv\Scripts\activate
 3. Install Required Dependencies
-bash
-Copy
-Edit
 pip install django
 4. Run the Django Development Server
-bash
-Copy
-Edit
 python manage.py runserver
 Visit the app in your browser at:
 http://127.0.0.1:8000
 
 ⚠️ Important Security Note
 This app uses the following logic to evaluate user input:
-
-python
-Copy
-Edit
 q = request.GET.get('query')
 answer = eval(q)  # Not safe for untrusted input!
 This can lead to code injection vulnerabilities if deployed online.
@@ -114,11 +101,6 @@ Made with ❤️ using Django and Bootstrap
 📜 License
 This project is open-source and available under the MIT License.
 
-yaml
-Copy
-Edit
-
----
 
 ### ✅ What's Included:
 - Fully documented features
