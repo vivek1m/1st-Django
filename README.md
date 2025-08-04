@@ -109,7 +109,3 @@ This project is open-source and available under the MIT License.
 - Step-by-step setup instructions
 - Future upgrade suggestions
 Let me know if you want this saved as a physical `README.md` file or want me to include it in your Django folder directly.
-
-
-## 📁 Project Structure
-
