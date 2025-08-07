@@ -1,4 +1,4 @@
-# 🧮 Django Calculator App !!
+# 🧮 Django Calculator App !!!
 
 A beginner-friendly calculator web application built with **Django** and **Bootstrap 5**. This project allows users to evaluate basic Python-style mathematical expressions in a clean, modern interface.
 
