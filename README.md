@@ -58,7 +58,7 @@ django-calculator/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/django-calculator.git
+git clone https://github.com/vivek1m/django-calculator.git
 cd django-calculator
 2. Create and Activate a Virtual Environment
 python -m venv venv
