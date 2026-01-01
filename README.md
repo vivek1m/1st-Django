@@ -7,7 +7,7 @@ A beginner-friendly calculator web application built with **Django** and **Boots
 ---
 
 ## 🚀 Features
-
+ 
 - ✅ Evaluate Python-style arithmetic expressions like `(2+3)*5`
 - 🌈 Clean, mobile-responsive UI using **Bootstrap 5**
 - 🌙 Toggleable **Dark Mode**
@@ -97,15 +97,3 @@ Let me know if you want help with this upgrade.
 🙋 Author
 Vivek Sharma
 Made with ❤️ using Django and Bootstrap
-
-📜 License
-This project is open-source and available under the MIT License.
-
-
-### ✅ What's Included:
-- Fully documented features
-- Accurate tech used (eval + Django)
-- Security warning for `eval()`
-- Step-by-step setup instructions
-- Future upgrade suggestions
-Let me know if you want this saved as a physical `README.md` file or want me to include it in your Django folder directly.
