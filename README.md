@@ -2,8 +2,6 @@
 
 A beginner-friendly calculator web application built with **Django** and **Bootstrap 5**. This project allows users to evaluate basic Python-style mathematical expressions in a clean, modern interface.
 
-> ⚠️ **Note:** This version uses Python’s built-in `eval()` for evaluation, which is not safe for untrusted input. This project is intended for educational/demo purposes only.
-
 ---
 
 ## 🚀 Features
@@ -70,30 +68,5 @@ python manage.py runserver
 Visit the app in your browser at:
 http://127.0.0.1:8000
 
-⚠️ Important Security Note
-This app uses the following logic to evaluate user input:
-q = request.GET.get('query')
-answer = eval(q)  # Not safe for untrusted input!
-This can lead to code injection vulnerabilities if deployed online.
-✅ For production, replace eval() with secure alternatives like:
 
-ast.literal_eval (only supports simple literals)
-
-Full AST-based arithmetic parsing
-
-Let me know if you want help with this upgrade.
-
-🌟 Possible Future Enhancements
-🔐 Safe evaluation using ast (instead of eval)
-
-📊 History stored in database with timestamps
-
-👥 User login system
-
-☁️ Deployment on Heroku or Render
-
-✅ Unit testing for expression logic
-
-🙋 Author
-Vivek Sharma
 Made with ❤️ using Django and Bootstrap
